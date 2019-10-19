@@ -11,10 +11,14 @@
       <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div>
     </div>
         <div class="overlay"></div>
-        <p class="background-text">
-          hey
+        <p class="background-text top">
+          DEVELOPER
         </p>
-        i'm a software developer and guitarist
+
+        <p class="background-text bottom">
+          GUITARIST
+        </p>
+        <!--i'm a software developer and guitarist-->
 
         <div class="laptop">
           <div class="screen">
@@ -126,15 +130,29 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.active {
+  /* color: rgb(238, 238, 110)!important;
+  opacity: 0.3!important;
+  background: none; */
+}
+
 .background-text {
   position: absolute;
-  font-size: 250px;
+  font-size: 100px;
   width: 100%;
   text-align: center;
-  top: -180px;
+  top: -50px;
   left: 0;
-  opacity: 0.1;
+  opacity: 0.02;
+  line-height: 1;
+  font-weight: 700;
 }
+
+.background-text.bottom {
+bottom: 0!important;
+top: unset;
+}
+
 @keyframes atom-move {
   0%, 100% { transform: translateX(0) translateY(0); opacity: 0;}
   10% { opacity: 1; }
@@ -283,33 +301,35 @@ animation: 13s atom-move infinite;
 .card {
   width: 100vw;
   height: 100vh;
-  min-height: 100vh;
   margin: 0 auto;
   position: absolute;
   top: 0;
   left: 0;
 
+
 }
 #container {
-  perspective: 15px;
+  perspective: 35px;
   margin: 0 auto;
   height: 100%;
   width: 100%;
+
 }
 
 #inner {
-  height: 100%;
-  width: 100%;
-  margin: 0%;
+  height: 90%;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
   background: radial-gradient(rgb(41, 41, 41), rgb(19, 19, 19));
-  //box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -o-transition: transform 0.5s;
   padding-top: 200px;
   font-size: 20px;
-  //overflow: hidden;
+  overflow: visible;
   position: relative;
   color: white;
 }

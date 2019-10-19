@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-  
+  <div class="app-overlay"></div>
 
     <Card />
    <!-- <Guitar />-->
+   <div class="intro">
+     developer<br />guitarist
+    </div>
   </div>
 </template>
 
@@ -23,6 +26,29 @@ export default {
 </script>
 
 <style>
+.app-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: white;
+  opacity: 0.03;
+}
+.intro {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font-size: 70px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-weight: 700;
+  line-height: 1;
+  display: none;
+
+}
 
 .white-overlay {
   position: absolute;
@@ -57,17 +83,24 @@ export default {
   box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
 #app {
-  font-family: 'Calibri', Helvetica, Arial, sans-serif;
+font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   margin: 0;
   padding: 0;
-  padding-top: 15vh;
-  background: rgb(19, 19, 19);
+  background: rgb(61, 61, 61);
   height: 100vh;
+  overflow: hidden;
   width: 100vw;
 }
 
