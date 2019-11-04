@@ -98,7 +98,7 @@ font-family: 'Titillium Web', sans-serif;
   color: white;
   margin: 0;
   padding: 0;
-  background: rgb(61, 61, 61);
+  /* background: rgb(61, 61, 61); */
   height: 100vh;
   overflow: hidden;
   width: 100vw;

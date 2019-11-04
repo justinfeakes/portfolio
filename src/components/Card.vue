@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+ <!-- <div class="card">
     <div id="container" ref="cardContainer">
       <div id="inner" ref="cardInner">
 
@@ -18,8 +18,6 @@
         <p class="background-text bottom">
           GUITARIST
         </p>
-        <!--i'm a software developer and guitarist-->
-
         <div class="laptop">
           <div class="screen">
             <div class="text-bar"></div>
@@ -39,8 +37,31 @@
           <div class="atom fifth"></div>
           <div class="atom sixth"></div>
         </div>
-
       </div>
+      
+    </div>
+  </div>-->
+  <div class="letter">
+    <div class="tall">
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+    </div>
+
+    <div class="dot">
+       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
+       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
+       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
+       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
+
+    </div>
+      
+      <div class="bottom">
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
     </div>
   </div>
 </template>
@@ -49,86 +70,165 @@
 export default {
   name: "Card",
   mounted: function() {
-    var container = document.getElementById("container"),
-    inner = document.getElementById("inner");
+    let elements = 
+    [...document.querySelectorAll('.tall div'),
+    ...document.querySelectorAll('.dot div'),
+    ...document.querySelectorAll('.bottom div')]
+    
+    let flag = true;
 
-  // Mouse
-  var mouse = {
-    _x: 0,
-    _y: 0,
-    x: 0,
-    y: 0,
-    updatePosition: function(event) {
-      var e = event || window.event;
-      this.x = e.clientX - this._x;
-      this.y = (e.clientY - this._y) * -1;
-    },
-    setOrigin: function(e) {
-      this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-      this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
-    },
-    show: function() {
-      return "(" + this.x + ", " + this.y + ")";
-    }
-  };
-
-  // Track the mouse position relative to the center of the container.
-  mouse.setOrigin(container);
-
-  //-----------------------------------------
-
-  var counter = 0;
-  var updateRate = 10;
-  var isTimeToUpdate = function() {
-    return counter++ % updateRate === 0;
-  };
-
-  //-----------------------------------------
-
-  var onMouseEnterHandler = function(event) {
-    update(event);
-  };
-
-  var onMouseLeaveHandler = function() {
-    inner.style = "";
-  };
-
-  var onMouseMoveHandler = function(event) {
-    if (isTimeToUpdate()) {
-      update(event);
-    }
-  };
-
-  //-----------------------------------------
-
-  var update = function(event) {
-    mouse.updatePosition(event);
-    updateTransformStyle(
-      (mouse.y / inner.offsetHeight / 2).toFixed(2),
-      (mouse.x / inner.offsetWidth / 2).toFixed(2)
-    );
-  };
-
-  var updateTransformStyle = function(x, y) {
-    var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-    inner.style.transform = style;
-    inner.style.webkitTransform = style;
-    inner.style.mozTransform = style;
-    inner.style.msTransform = style;
-    inner.style.oTransform = style;
-  };
-
-  //-----------------------------------------
-
-  container.onmouseenter = onMouseEnterHandler;
-  container.onmouseleave = onMouseLeaveHandler;
-  container.onmousemove = onMouseMoveHandler;
+    elements.forEach((element) => {
+      console.log(element)
+      let x = element.getBoundingClientRect().left;
+      let y = element.getBoundingClientRect().top;
+      let startX = Math.floor((Math.random() * 300) + 1)
+      let startY = Math.floor((Math.random() * 300) + 1)      
+      element.style.transform = flag ? `translateX(${startX}px) translateY(${startY}px)` : `translateX(-${startX}px) translateY(-${startY}px)`;
+     element.style.transitionDuration = (Math.random() * 2.00) + 1 + "s";
+     flag = !flag;
+      setTimeout(() => {
+        element.style.opacity = "1";
+        
+        element.style.transform = `translateX(0px) translateY(0px)`
+      }, 2000)
+      
+      
+    })
   }
+    // var container = document.getElementById("container"),
+    // inner = document.getElementById("inner");
+
+  // // Mouse
+  // var mouse = {
+  //   _x: 0,
+  //   _y: 0,
+  //   x: 0,
+  //   y: 0,
+  //   updatePosition: function(event) {
+  //     var e = event || window.event;
+  //     this.x = e.clientX - this._x;
+  //     this.y = (e.clientY - this._y) * -1;
+  //   },
+  //   setOrigin: function(e) {
+  //     this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+  //     this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+  //   },
+  //   show: function() {
+  //     return "(" + this.x + ", " + this.y + ")";
+  //   }
+  // };
+
+  // // Track the mouse position relative to the center of the container.
+  // mouse.setOrigin(container);
+
+  // //-----------------------------------------
+
+  // var counter = 0;
+  // var updateRate = 10;
+  // var isTimeToUpdate = function() {
+  //   return counter++ % updateRate === 0;
+  // };
+
+  // //-----------------------------------------
+
+  // var onMouseEnterHandler = function(event) {
+  //   update(event);
+  // };
+
+  // var onMouseLeaveHandler = function() {
+  //   inner.style = "";
+  // };
+
+  // var onMouseMoveHandler = function(event) {
+  //   if (isTimeToUpdate()) {
+  //     update(event);
+  //   }
+  // };
+
+  // //-----------------------------------------
+
+  // var update = function(event) {
+  //   mouse.updatePosition(event);
+  //   updateTransformStyle(
+  //     (mouse.y / inner.offsetHeight / 2).toFixed(2),
+  //     (mouse.x / inner.offsetWidth / 2).toFixed(2)
+  //   );
+  // };
+
+  // var updateTransformStyle = function(x, y) {
+  //   var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+  //   inner.style.transform = style;
+  //   inner.style.webkitTransform = style;
+  //   inner.style.mozTransform = style;
+  //   inner.style.msTransform = style;
+  //   inner.style.oTransform = style;
+  // };
+
+  // //-----------------------------------------
+
+  // container.onmouseenter = onMouseEnterHandler;
+  // container.onmouseleave = onMouseLeaveHandler;
+  // container.onmousemove = onMouseMoveHandler;
+  // }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.letter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  height: 130px;
+  width: 90px;
+  top: 150px;
+}
+/* .letter * {
+  background: rgb(209, 209, 209);
+} */
+.dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  display: flex;
+  height: 30px;
+    flex-direction: row;
+  flex-wrap: wrap;
+}
+.tall {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 30px;
+  height: 60px;
+  display: flex;
+    flex-direction: row;
+  flex-wrap: wrap;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 90px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bottom div, .tall div, .dot div {
+  width: 5px;
+  height: 5px;
+background: rgb(209, 209, 209);
+transition: 1.5s all cubic-bezier(0.42, 0, 0, 1.38);
+  /* display: inline-block; */
+  opacity: 0;
+}
+.bottom div:hover, .tall div:hover, .dot div:hover {
+background: red;
+}
 
 .active {
   /* color: rgb(238, 238, 110)!important;
