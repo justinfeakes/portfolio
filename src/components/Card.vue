@@ -1,67 +1,228 @@
 <template>
- <!-- <div class="card">
-    <div id="container" ref="cardContainer">
-      <div id="inner" ref="cardInner">
-
-      <div class="background-circles left">
-      <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div>
-    </div>
-
-    <div class="background-circles right">
-      <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div>
-    </div>
-        <div class="overlay"></div>
-        <p class="background-text top">
-          DEVELOPER
-        </p>
-
-        <p class="background-text bottom">
-          GUITARIST
-        </p>
-        <div class="laptop">
-          <div class="screen">
-            <div class="text-bar"></div>
-            <div class="text-bar"></div>
-            <div class="text-bar"></div>
-          </div>
-          <div class="base"></div>
-        </div>
-        
-
-        <div class="atom-container">
-          <div class="atom first"></div>
-          <div class="atom second"></div>
-          <div class="atom third"></div>
-
-          <div class="atom fourth"></div>
-          <div class="atom fifth"></div>
-          <div class="atom sixth"></div>
-        </div>
-      </div>
-      
-    </div>
-  </div>-->
   <div class="letter">
     <div class="tall">
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
     </div>
 
     <div class="dot">
-       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
-       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
-       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
-       <div/><div/> <div/><div/><div/><div/><div/><div/><div/>
-
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
     </div>
-      
-      <div class="bottom">
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
-      <div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/><div/>
+
+    <div class="bottom">
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
     </div>
   </div>
 </template>
@@ -70,106 +231,56 @@
 export default {
   name: "Card",
   mounted: function() {
-    let elements = 
-    [...document.querySelectorAll('.tall div'),
-    ...document.querySelectorAll('.dot div'),
-    ...document.querySelectorAll('.bottom div')]
-    
+    // onmousemove = function(e){
+    //   elements.forEach((element) => {
+    //     let x = Math.floor((Math.random() * 10) + 1)
+    //     let y = Math.floor((Math.random() * 10) + 1)
+    //     element.style.transform = flag ? `translateX(${x}px) translateY(${y}px)` : `translateX(-${startX}px) translateY(-${startY}px)`;
+
+    //   })
+    //   // console.log("mouse location:", e.clientX, e.clientY)
+    // }
+
+    let elements = [
+      ...document.querySelectorAll(".tall div"),
+      ...document.querySelectorAll(".dot div"),
+      ...document.querySelectorAll(".bottom div")
+    ];
     let flag = true;
 
-    elements.forEach((element) => {
-      console.log(element)
-      let x = element.getBoundingClientRect().left;
-      let y = element.getBoundingClientRect().top;
-      let startX = Math.floor((Math.random() * 300) + 1)
-      let startY = Math.floor((Math.random() * 300) + 1)      
-      element.style.transform = flag ? `translateX(${startX}px) translateY(${startY}px)` : `translateX(-${startX}px) translateY(-${startY}px)`;
-     element.style.transitionDuration = (Math.random() * 2.00) + 1 + "s";
-     flag = !flag;
+    elements.forEach(element => {
+      console.log(element);
+      let startX = Math.floor(Math.random() * 200 + 1);
+      let startY = Math.floor(Math.random() * 200 + 1);
+
+      
+      let endX = Math.floor(Math.random() * 5 + 1);
+      let endY = Math.floor(Math.random() * 5 + 1);
+      
+      element.style.transform = flag
+        ? `translateX(${startX}px) translateY(${startY}px)`
+        : `translateX(-${startX}px) translateY(-${startY}px)`;
+      element.style.transitionDuration = Math.random() * 2.0 + 1 + "s";
+      flag = !flag;
       setTimeout(() => {
         element.style.opacity = "1";
-        
-        element.style.transform = `translateX(0px) translateY(0px)`
-      }, 2000)
-      
-      
-    })
+        element.style.transform = flag
+        ? `translateX(${endX}px) translateY(0px)`
+        : `translateX(-${endX}px) translateY(-0}px)`;
+      }, 500);
+
+      // setTimeout(() => {
+      //   elements.forEach(element => { element.style.transition = "2s all linear" });
+      //   setInterval(() => {
+      //     elements.forEach(element => {
+      //       let x = Math.floor(Math.random() * 10 + 1);
+      //       let y = Math.floor(Math.random() * 10 + 1);
+      //       element.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      //     });
+      //   }, 2500);
+      // }, 1000);
+    });
   }
-    // var container = document.getElementById("container"),
-    // inner = document.getElementById("inner");
-
-  // // Mouse
-  // var mouse = {
-  //   _x: 0,
-  //   _y: 0,
-  //   x: 0,
-  //   y: 0,
-  //   updatePosition: function(event) {
-  //     var e = event || window.event;
-  //     this.x = e.clientX - this._x;
-  //     this.y = (e.clientY - this._y) * -1;
-  //   },
-  //   setOrigin: function(e) {
-  //     this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-  //     this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
-  //   },
-  //   show: function() {
-  //     return "(" + this.x + ", " + this.y + ")";
-  //   }
-  // };
-
-  // // Track the mouse position relative to the center of the container.
-  // mouse.setOrigin(container);
-
-  // //-----------------------------------------
-
-  // var counter = 0;
-  // var updateRate = 10;
-  // var isTimeToUpdate = function() {
-  //   return counter++ % updateRate === 0;
-  // };
-
-  // //-----------------------------------------
-
-  // var onMouseEnterHandler = function(event) {
-  //   update(event);
-  // };
-
-  // var onMouseLeaveHandler = function() {
-  //   inner.style = "";
-  // };
-
-  // var onMouseMoveHandler = function(event) {
-  //   if (isTimeToUpdate()) {
-  //     update(event);
-  //   }
-  // };
-
-  // //-----------------------------------------
-
-  // var update = function(event) {
-  //   mouse.updatePosition(event);
-  //   updateTransformStyle(
-  //     (mouse.y / inner.offsetHeight / 2).toFixed(2),
-  //     (mouse.x / inner.offsetWidth / 2).toFixed(2)
-  //   );
-  // };
-
-  // var updateTransformStyle = function(x, y) {
-  //   var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-  //   inner.style.transform = style;
-  //   inner.style.webkitTransform = style;
-  //   inner.style.mozTransform = style;
-  //   inner.style.msTransform = style;
-  //   inner.style.oTransform = style;
-  // };
-
-  // //-----------------------------------------
-
-  // container.onmouseenter = onMouseEnterHandler;
-  // container.onmouseleave = onMouseLeaveHandler;
-  // container.onmousemove = onMouseMoveHandler;
-  // }
 };
 </script>
 
@@ -183,7 +294,7 @@ export default {
   /* border: 1px solid red; */
   height: 130px;
   width: 90px;
-  top: 150px;
+  top: calc(50% - 65px);
 }
 /* .letter * {
   background: rgb(209, 209, 209);
@@ -195,7 +306,7 @@ export default {
   width: 30px;
   display: flex;
   height: 30px;
-    flex-direction: row;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .tall {
@@ -205,7 +316,7 @@ export default {
   width: 30px;
   height: 60px;
   display: flex;
-    flex-direction: row;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .bottom {
@@ -218,16 +329,20 @@ export default {
   flex-wrap: wrap;
 }
 
-.bottom div, .tall div, .dot div {
+.bottom div,
+.tall div,
+.dot div {
   width: 5px;
   height: 5px;
-background: rgb(209, 209, 209);
-transition: 1.5s all cubic-bezier(0.42, 0, 0, 1.38);
+  background: rgb(209, 209, 209);
+  transition: 1.5s all cubic-bezier(0.42, 0, 0, 1.38);
   /* display: inline-block; */
   opacity: 0;
 }
-.bottom div:hover, .tall div:hover, .dot div:hover {
-background: red;
+.bottom div:hover,
+.tall div:hover,
+.dot div:hover {
+  background: red;
 }
 
 .active {
@@ -249,23 +364,49 @@ background: red;
 }
 
 .background-text.bottom {
-bottom: 0!important;
-top: unset;
+  bottom: 0 !important;
+  top: unset;
 }
 
 @keyframes atom-move {
-  0%, 100% { transform: translateX(0) translateY(0); opacity: 0;}
-  10% { opacity: 1; }
-  30%{ transform: translateX(20px) translateY(-20px); opacity: initial;}
-  70%{ transform: translateX(-10px) translateY(-10px)}
-  80% { opacity: initial; }
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(20px) translateY(-20px);
+    opacity: initial;
+  }
+  70% {
+    transform: translateX(-10px) translateY(-10px);
+  }
+  80% {
+    opacity: initial;
+  }
 }
 @keyframes atom-move-alternate {
-  0%, 100% { transform: translateX(0) translateY(0); opacity: 0;}
-  10% { opacity: 1; }
-  30%{ transform: translateX(-10px) translateY(20px); opacity: initial;}
-  70%{ transform: translateX(30px) translateY(10px)}
-  80% { opacity: initial; }
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-10px) translateY(20px);
+    opacity: initial;
+  }
+  70% {
+    transform: translateX(30px) translateY(10px);
+  }
+  80% {
+    opacity: initial;
+  }
 }
 .atom-container {
   position: absolute;
@@ -277,11 +418,11 @@ top: unset;
   top: 30%;
 }
 .atom {
-height: 8px;
-width: 8px;
-border-radius: 100%;
-position: absolute;
-opacity: 0;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0;
 }
 
 .atom.first {
@@ -290,8 +431,7 @@ opacity: 0;
   background: red;
   box-shadow: 0px 0px 20px red;
   animation-delay: 0.1;
-animation: 20s atom-move infinite;
-
+  animation: 20s atom-move infinite;
 }
 
 .atom.second {
@@ -300,9 +440,7 @@ animation: 20s atom-move infinite;
   background: yellow;
   box-shadow: 0px 0px 20px yellow;
   animation-delay: 1s;
-animation: 15s atom-move infinite;
-
-
+  animation: 15s atom-move infinite;
 }
 
 .atom.third {
@@ -310,21 +448,19 @@ animation: 15s atom-move infinite;
   right: 15%;
   background: orange;
   box-shadow: 0px 0px 20px orange;
-animation: 20s atom-move-alternate infinite;
+  animation: 20s atom-move-alternate infinite;
   animation-delay: 0.5;
-
 }
 
 .atom.fourth {
   background: red;
-  box-shadow:0px 0px 20px red;
-  top: 60%; 
+  box-shadow: 0px 0px 20px red;
+  top: 60%;
   height: 6px;
   width: 6px;
   right: 5%;
   animation-delay: 1s;
-animation: 20s atom-move-alternate infinite;
-
+  animation: 20s atom-move-alternate infinite;
 }
 
 .atom.fifth {
@@ -335,9 +471,7 @@ animation: 20s atom-move-alternate infinite;
   background: yellow;
   box-shadow: 0px 0px 20px yellow;
   animation-delay: 1.5s;
-animation: 13s atom-move infinite;
-
-
+  animation: 13s atom-move infinite;
 }
 
 .reflect {
@@ -356,7 +490,7 @@ animation: 13s atom-move infinite;
   position: absolute;
   height: 90%;
   width: 90%;
-  top: 0; 
+  top: 0;
   left: 5%;
   background: white;
   border: 7px solid rgb(73, 73, 73);
@@ -377,12 +511,12 @@ animation: 13s atom-move infinite;
 }
 
 .laptop .screen .text-bar:nth-of-type(2) {
-  top: 40%; 
+  top: 40%;
   width: 60%;
 }
 
 .laptop .screen .text-bar:nth-of-type(3) {
-  top: 70%; 
+  top: 70%;
   width: 75%;
 }
 
@@ -405,22 +539,19 @@ animation: 13s atom-move infinite;
   position: absolute;
   top: 0;
   left: 0;
-
-
 }
 #container {
   perspective: 35px;
   margin: 0 auto;
   height: 100%;
   width: 100%;
-
 }
 
 #inner {
-  height: 90%;
-  width: 90%;
-  margin-top: 5%;
-  margin-left: 5%;
+  height: 100%;
+  width: 100%;
+  /* margin-top: 5%;
+  margin-left: 5%; */
   background: radial-gradient(rgb(41, 41, 41), rgb(19, 19, 19));
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s;
@@ -444,9 +575,6 @@ animation: 13s atom-move infinite;
   opacity: 0.05;
 }
 
-
-
-
 .background-circles {
   display: flex;
   height: 100%;
@@ -458,12 +586,14 @@ animation: 13s atom-move infinite;
   display: none;
 }
 .background-circles.left {
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 40%;
 }
 
 .background-circles.right {
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   width: 40%;
 }
 
@@ -474,6 +604,5 @@ animation: 13s atom-move infinite;
   //border-radius: 100%;
   opacity: 0.1;
   margin: 8%;
-
 }
 </style>

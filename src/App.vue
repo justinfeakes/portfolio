@@ -1,12 +1,41 @@
 <template>
   <div id="app">
-  <div class="app-overlay"></div>
+  <!-- <div class="app-overlay"></div> -->
+    
+    <Card v-if="showCard" />
 
-    <Card />
-   <!-- <Guitar />-->
-   <div class="intro">
-     developer<br />guitarist
+    <div class="background-top"></div>
+    <div class="background-bottom"></div>
+
+    <!-- <div class="grid">
+      <div class="grid-row">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+ <div class="grid-row">
+       <div></div><div></div><div></div> <div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+       <div class="grid-row">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+       <div class="grid-row">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+    </div> -->
+
+    <div class="heading-text">
+    <h1 class="header">
+      Hey I'm Justin. I'm a developer / designer.
+    <!-- <span>Hey </span><span>I'm </span> <span>Justin.</span> <span>I'm </span> <span>a </span> <span class="lighter">developer</span><span>/</span><span class="lighter">guitarist.</span> -->
+    </h1>
+
+    <!-- <p>hi</p> -->
+
+    <button>Contact me</button>
     </div>
+   <!-- <Guitar />-->
+   <!-- <div class="intro">
+     developer<br />guitarist
+    </div> -->
   </div>
 </template>
 
@@ -19,13 +48,175 @@ export default {
   components: {
     Card, Guitar
   },
+  data: function() {
+    return {
+      showCard: true
+    }
+  },
   mounted: function() {
+    // setTimeout(() => {
+    //   this.showCard = false;
+    // }, 4400)
     //AIzaSyBLg__PVueiRZj7SUCw61Cvn6dgNp51RmE
   }
 }
 </script>
 
 <style>
+.grid {
+ width: 300px;
+ height: 200px;
+ position: absolute;
+ top: 200px;
+ left: 200px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  /* position: absolute; */
+}
+
+.grid-row div {
+  height: 5px;
+  width: 5px;
+  background: grey;
+  opaciTY: 0.4;
+}
+@keyframes enter-heading {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.heading-text {
+  color: #333;
+  position: absolute;
+  font-weight: 900;
+  top: 35vh;
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading-text h1 {
+  animation: enter-heading 1s 3.3s forwards;
+  opacity: 0;
+  /* font-size: 40px; */
+  margin-bottom:0;
+}
+
+.heading-text button {
+  background: #0097A7;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 100px;
+  color: white;
+  outline: none;
+  animation: enter-heading 1s 3.4s forwards;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  opacity: 0;
+  /* box-shadow: 0px 2px 4px rgb(185, 185, 185); */
+}
+
+.heading-text p {
+  font-weight: 100;
+  opacity: 0.7;
+  animation: enter-heading 1s 3.3s forwards;
+  opacity: 0;
+}
+
+/* h1 span {
+  animation: enter-heading 1s forwards;
+  margin-right: 7px;
+  display:inline-block;
+  opacity: 0;
+} */
+
+/* h1 span:nth-of-type(1) {
+  animation-delay: 3.2s;
+}
+
+h1 span:nth-of-type(2) {
+  animation-delay: 3.3s;
+}
+
+h1 span:nth-of-type(3) {
+  animation-delay: 3.4s;
+}
+
+h1 span:nth-of-type(4) {
+  animation-delay: 3.5s;
+} */
+
+/* h1 span:nth-of-type(5) {
+  animation-delay: 3.6s;
+}
+
+h1 span:nth-of-type(6) {
+  animation-delay: 3.7s;
+}
+
+h1 span:nth-of-type(7) {
+  animation-delay: 3.8s;
+} */
+
+/* h1 span:nth-of-type(8) {
+  animation-delay: 3.9s;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@keyframes enter-top {
+  0% { transform: translateY(100vh) }
+  100% { transform: translateY(0) }
+}
+
+@keyframes enter-bottom {
+  0% { transform: translateY(100vh) }
+  100% { transform: translateX(0) }
+}
+.background-top {
+  position: absolute;
+  background: rgb(184, 184, 184);
+  top: 0;
+  left:0%;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100vw);
+  animation: .5s 3s enter-top forwards;
+}
+
+.background-bottom {
+  position: absolute;
+  background: white;
+  /* background: rgb(243, 243, 243); */
+  top: 0;
+  left:0%;
+  height: 100%;
+  transform: translateX(100vw);
+  width: 100%;
+  animation: .6s 3.2s enter-bottom forwards;
+}
+
+
+
+
+
 .app-overlay {
   position: absolute;
   top: 50%;
@@ -87,11 +278,12 @@ html, body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+  background: black;
     overflow: hidden;
 }
 
 #app {
-font-family: 'Titillium Web', sans-serif;
+font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
