@@ -24,13 +24,13 @@
 
     <div class="heading-text">
     <h1 class="header">
-      Hey I'm Justin. I'm a developer / designer.
+      Hey I'm Justin. I'm a developer / guitarist.
     <!-- <span>Hey </span><span>I'm </span> <span>Justin.</span> <span>I'm </span> <span>a </span> <span class="lighter">developer</span><span>/</span><span class="lighter">guitarist.</span> -->
     </h1>
 
-    <!-- <p>hi</p> -->
+    <p>justin@justinfeakes.com</p>
 
-    <button>Contact me</button>
+    <!-- <button>Contact me</button> -->
     </div>
    <!-- <Guitar />-->
    <!-- <div class="intro">
